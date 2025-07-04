@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weatherapp.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1 class="page-title">🌤️ Weather App</h1>
+
+    <div class="card">
+      <form id="weather-form">
+        <label for="city" class="form-label">City Name</label>
+        <input type="text" id="city" class="form-input" placeholder="Enter your city" />
+
+        <p class="or-text">— OR —</p>
+
+        <label for="location" class="form-label">Location</label>
+        <input type="text" id="location" class="form-input" placeholder="Enter your location" />
+
+        <button type="button" onclick="submitWeather()" class="btn">Check Weather</button>
+      </form>
+    </div>
+
+    <div id="weather-result" class="weather-result hidden">
+      <h2 id="weather-type">Weather Result</h2>
+      <img id="weather-icon" src="" alt="Weather Icon" />
+      <p id="weather-description"></p>
+      <p id="weather-temp"></p>
+    </div>
+  </div>
+
+  <script src="weatherapp.js"></script>
+</body>
+</html>
